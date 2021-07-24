@@ -1,0 +1,118 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: quicksand;
+	background-color: #0d0f0d;
+
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 80px;
+	padding: 10px 100px;
+	box-sizing: border-box;
+	transition: .3s;
+}
+
+nav.black {
+	background: rgba(0,0,0,0.8);
+	height: 80px;
+	padding: 5px 50px;
+
+}
+
+nav .logo{
+	font-family: "Lucida Sans Unicode";
+	padding: 22px 20px;
+	height: 80px;
+	float: left;
+	color: white;
+	font-size: 18px;
+	transition: .3s;
+}
+
+nav.black .logo{
+	color: #fff;
+}
+
+nav ul{
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	display:flex;
+
+
+}   
+
+nav ul li{
+	list-style: none;
+}
+
+nav ul li a{
+	font-family: "Lucida Sans Unicode";
+	line-height: 80px;
+	font-size: 11px;
+	color:white;
+	padding: 12px 25px;
+	text-decoration: none;
+	transition: .3s;
+
+}
+
+nav.black ul li a{
+	color: #fff;
+
+}
+nav.black ul li a:hover{
+	color: #ffd63f;
+
+}
+nav ul li a.focus{
+	outline: none;
+
+}
+
+
+nav ul li a.active{
+	background: #db2929;
+	color: #fff;
+	border-radius: 6px;
+}
+
+.mlogo{
+	height: 50px;
+	width: 50px;
+	margin-right: 15px;
+	margin-top: -10px;
+}
+
+
+.logo{
+	display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
