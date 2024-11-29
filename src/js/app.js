@@ -10,7 +10,7 @@
 // });
 
 // Smooth Scroll for Menu Links
-document.querySelectorAll('nav ul li a').forEach(anchor => {
+document.querySelectorAll('nav ul li .smooth_scrollable_links').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
