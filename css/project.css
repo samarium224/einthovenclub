@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #282030;
+  color: #fff;
+}
+.logo {
+  width: 181px;
+  height: 75px;
+  top: 11px;
+  left: 72px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+header {
+  background-color: #0d0c13;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url("../assets/hero_image.png");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero .btn {
+  background-color: #0066cc;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.about {
+  text-align: center;
+  background-color: #282030;
+}
+
+
+/* Web designer Section */
+
+.projects {
+   display: grid; 
+  grid-template-columns: repeat(3, 2fr);
+  gap: 20px; 
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.project {
+  position: relative;
+}
+
+.team {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  opacity: 0;
+  transition: all 0.6s ease;
+  background-image: linear-gradient(250deg, rgb(55, 58, 65) 0%, rgba(11, 1, 19, 0.5) 100%);
+  border-radius: 10px; /* Adjusted border radius */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content:end;
+  align-items: center; /* Center content */
+  color: #a09b94;
+  box-sizing: border-box;
+  font-size: 90%;
+  overflow: hidden; /* Ensures content respects border radius */
+}
+
+.team-name{
+  color: #e8b563;
+  font-weight: bold;
+  font-family: "Poppins", sans-serify;
+  font-size:large;
+}
+
+
+.project-details:hover .project-name,
+.project-details:hover .project-dept {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-details:hover .team {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.project-details{
+  width: 100%;
+  background-image:linear-gradient(250deg, rgb(55, 58, 65) 0%, rgba(11, 1, 19, 0.5) 100%);
+  padding: 200px 25px 25px;
+  margin-top: -150px;
+  display: inline-block;  
+  border-radius: 3%;
+  position: relative;
+  transition: all 0.6s ease;
+  transform-style: preserve-3d;
+  height: max-content;  
+}
+
+.project-img {
+  width: 75%;
+  margin: auto;
+}
+
+.project-img img {
+  border-radius: 5%;
+  z-index: 1;
+ position: relative;
+ padding: 10px;
+ border: 2px solid #e8b563; 
+}
+
+.project-name {
+  color: #ffc36c;
+  font-weight: bold;
+  font-family: "Poppins", sans-serify;
+ 
+}
+
+.project-dept {
+  color: #a6c3ba;
+}
+
+
+
+/* Contact Us Section */
+.contact {
+  padding: 50px 0px;
+  background-color: #000000;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.contact-info .club-info img,
+.contact-info .mist-info img {
+  margin-bottom: 10px;
+}
+
+.contact-info .mist-info p {
+  font-size: 0.9rem;
+  color: #ccc;
+  text-align: left;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mist {
+  display: flex;
+  gap: 1.5pc;
+}
+
+.mist img {
+  width: 20px;
+  height: 20px;
+}
+/*end contact */
+
+/* Footer */
+footer {
+  background-image: linear-gradient(90deg, #34194f 1.5%, #8676ad 100%);
+  padding: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footerlogo {
+  width: 15rem;
+}
+
+.contact-section {
+  max-width: 400px;
+}
+
+.links-section {
+  justify-content: center;
+  align-items: left;
+  margin: auto;
+  /* font-size: 1.2rem; */
+}
+
+footer h2 {
+  color: white;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  color: #ffc36c;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social-section {
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.social-section ul {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.mec {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+}
+.facebook-follow {
+  display: inline-block;
+  border: 2.5px solid rgb(252, 186, 63);
+  padding: 10px;
+ background-image: linear-gradient(90deg, #2e1b41 10%, #695a94 100%);
+	border-radius: 0.8rem;
+}
+.fb-post{
+  color: #ffc36c;
+  font-weight: bold;
+}
+.facebook-box {
+  display: flex;
+  align-items: center;
+}
+.facebook-box img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.facebook-details {
+  text-align: left;
+}
+
+.facebook-details p {
+  margin: 5px 0;
+}
+
+.like-button {
+  background-color: #4267B2;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-button:hover {
+  background-color: #365899;
+}
+
+/*end Footer */

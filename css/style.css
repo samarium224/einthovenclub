@@ -90,6 +90,7 @@ nav ul li a {
   text-align: center;
 }
 
+
 .department-grid {
   display: grid;
   /* grid-template-columns: repeat(4, 1fr);  */
@@ -386,7 +387,7 @@ a:hover {
   width: 100px;
   height: auto;
   margin-right: 10px;
-  border-radius: 5px;
+  border-radius: 50%;
 }
 
 .facebook-details {
@@ -532,6 +533,60 @@ a:hover {
   border: 3px solid rgb(64, 234, 211) ;
 }
 
+.p2023{
+  color: #796cdd;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.p2022 h3{
+  color: #50a7e0;
+  font-weight: bold;
+ }
+
+ .p2022 h1{
+  color: #50a7e0;;
+  font-weight: bold;
+  margin-top: 2rem; 
+  margin-bottom: 2rem;
+}
+ 
+.p2022 img{
+  border: 3px solid #50a7e0 ;
+}
+
+
+
+.p2021 h1{
+  color: #138f36;
+  font-weight: bold;
+  margin-top: 2rem; 
+  margin-bottom: 2rem;
+}
+ 
+.p2021 h3{
+  color: #138f36;
+
+}
+.p2021 img{
+  border: 3px solid #138f36 ;
+}
+
+
+.p2020 h1{
+  color: #ce6d6d;
+  font-weight: bold;
+  margin-top: 2rem; 
+  margin-bottom: 2rem;
+}
+
+.p2020 h3{
+  color: #ce6d6d;
+  }
+
+  .p2020 img{
+    border: 3px solid #ce6d6d ;
+  }
 /*alumni end*/
 
 /*team page end*/

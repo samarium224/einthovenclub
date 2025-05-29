@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #282030;
+    color: white;
+}
+
+img {
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+  }
+img:hover {
+    box-shadow: 0 0 15px 5px #fcba03; 
+    transform: scale(1.05); 
+  }
+  .logo {
+    width: 181px;
+    height: 75px;
+    top: 11px;
+    left: 72px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  
+  header {
+    background-color: #0d0c13;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+#showcase {
+     background-image: url("assets/MIST.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    filter: brightness(0.7);
+    padding: 100px 20px;
+    }
+
+#showcase h1{
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+#showcase p{
+    font-size: 1.5rem;
+    color:  #ffde59;
+    font-weight: bolder;
+    
+}
+
+#events {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to left, #170c27, #492463 );
+    padding: 50px;
+    position: relative;
+}
+#events img {
+    width: 300px;
+    height: 90%;
+    margin-left: 5%;
+    padding: auto;
+    margin-right: 5%;
+}
+#events p{
+   font-size: 20px;
+   color: white;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 
+   'Trebuchet MS', sans-serif;
+   margin-top: 20px;
+   padding-left: 5%;
+   text-align: justify;
+   margin-right: 5%;
+   margin-bottom: 5%;
+
+}
+#events-2{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background: linear-gradient(to right,  #211a63,#110838 );
+    flex-direction: row-reverse;
+    position: relative;
+}
+#events-2 img {
+    width: 300px;
+    margin: 20px;
+    margin-left: 5%;
+    padding: auto;
+    margin-right: 5%;
+}
+#events-2 p{
+  font-size: 20px;
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 
+  'Trebuchet MS', sans-serif;
+  margin-top: 20px;
+  padding-left: 5%;
+  text-align: justify;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+/* button */
+#events button {
+  position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 10px 20px; 
+    background-color: #7230b4; 
+    color: white; 
+    border: black; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    box-sizing: border-box;
+  }
+  
+  /*hover effect */
+ #events button:hover {
+    background-color: #190fa1; 
+    box-shadow: 0 0 15px 5px #1a449e; 
+   
+  }
+  #events-2 button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 10px 20px; 
+    background-color: #444f9d; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    box-sizing: border-box;
+  }
+  
+  /* Button hover effect */
+ #events-2 button:hover {
+    background-color: #190fa1; 
+    box-shadow: 0 0 15px 5px #1a449e; 
+    
+  }
+/*############################################*/
+
+
+
+/*fade-in animation*/
+@keyframes fade-in {
+    from {
+      scale: 0.8; 
+      opacity: 0; 
+    }
+    to {
+      scale: 1; 
+      opacity: 1; 
+    }
+  }
+  #events-2 img {
+    animation: fade-in 1.5s linear forwards; 
+    transform-origin: center; 
+    animation-timeline: view(); 
+    animation-range-start: cover;
+    animation-range-end: contain;
+  }
+
+  /* Footer */
+footer {
+  background-image: linear-gradient(90deg, #34194f 1.5%, #8676ad 100%);
+  padding: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footerlogo {
+  width: 15rem;
+}
+
+.contact-section {
+  max-width: 400px;
+}
+
+.links-section {
+  justify-content: center;
+  align-items: left;
+  margin: auto;
+  /* font-size: 1.2rem; */
+}
+
+footer h2 {
+  color: white;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  color: #ffc36c;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social-section {
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.social-section ul {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.mec {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+}
+.facebook-follow {
+  display: inline-block;
+  border: 2.5px solid rgb(252, 186, 63);
+  padding: 10px;
+ background-image: linear-gradient(90deg, #2e1b41 10%, #695a94 100%);
+	border-radius: 0.8rem;
+}
+.fb-post{
+  color: #ffc36c;
+  font-weight: bold;
+}
+.facebook-box {
+  display: flex;
+  align-items: center;
+}
+.facebook-box img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+/* Contact Us Section */
+.contact {
+  padding: 50px 0px;
+  background-color: #000000;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.contact-info .club-info img,
+.contact-info .mist-info img {
+  margin-bottom: 10px;
+}
+
+.contact-info .mist-info p {
+  font-size: 0.9rem;
+  color: #ccc;
+  text-align: left;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mist {
+  display: flex;
+  gap: 1.5pc;
+}
+
+.mist img {
+  width: 20px;
+  height: 20px;
+}
+
+  /*######################################*/

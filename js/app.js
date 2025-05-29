@@ -12,10 +12,14 @@
 // Smooth Scroll for Menu Links
 document.querySelectorAll('nav ul li .smooth_scrollable_links').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        // Only prevent default for same-page anchors (#links)
+        if (this.getAttribute('href').startsWith('#')) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+        // Let browser handle regular links (index.html, etc.)
     });
 });
 
